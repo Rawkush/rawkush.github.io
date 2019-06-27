@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Ankush\Desktop\rawkush.github.io\css\superslides.css">
     <link rel="stylesheet" href="C:\Users\Ankush\Desktop\rawkush.github.io\css\Index_style.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
@@ -16,57 +21,39 @@
     
 
 
-<div class="slideshow-container">
-
-    <div class="slide-data fade">
-
-        <div class="number of slide">1/3</div>
-        <img src="https://github.com/Rawkush/rawkush.github.io/blob/master/res/student.jpeg?raw=true" >
-        <div class="text" > Caption  </div>
+    <div id="slides">
 
 
-    </div>
+        <div class="overlay"></div>
 
-    <div class="slide-data fade">
+        <div class="slides-container">
+            <img src="res/androiddev.jpg" alt="">
+            <img src="res/webdev.jpg" alt="">
+            <img src="res/student.jpeg"">
+        </div>
 
-            <div class="number of slide">2/3</div>    
-            <img src="https://github.com/Rawkush/rawkush.github.io/blob/master/res/androiddev.jpg?raw=true" >
-            <div class="text" > Caption  </div>
+        <div class="titleMessage">
+            <div class="heading">
+                <p class="main">Ankush Rawat</p>
+                <p class="sub typed"></p>
+            </div>
+        </div>
 
-    </div>
-
-    <div class="slide-data fade">
-
-        <div class="number of slide">3/3</div>
-        <img src="https://github.com/Rawkush/rawkush.github.io/blob/master/res/webdev.jpg?raw=true" >
-        <div class="text" > Caption  </div>
+        <nav class="slides-navigation">
+            <a href="#" class="next" ></a>
+            <a href="#" class="prev"></a>
+          </nav>
 
     </div>
 
-
-  
-
-
-</div>
-
-
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-<br>
-
-
-<div class="dots">
-
-    <!-- to do: add onclick on dots to navigate through dots too -->
-    <span class="dot"  ></span>
-
-    <span class="dot"></span>
-    
-    <span class="dot"></span>
-</div>
-
-<script src="C:\Users\Ankush\Desktop\rawkush.github.io\javascript\index_js.js"></script>
+<script src="C:\Users\Ankush\Desktop\rawkush.github.io\javascript\jquery.superslides.min.js"></script>
+<script>
+    $(function() {
+      $('#slides').superslides({
+        hashchange: true
+      });
+    });
+  </script>
 
 </body>
 
