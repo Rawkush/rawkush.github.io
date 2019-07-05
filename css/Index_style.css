@@ -110,3 +110,23 @@ body {font-family: Verdana, sans-serif; margin:0}
   background: url(../res/loader.gif) center center no-repeat;
 }
 
+
+.span4{
+  margin-top: 90px;
+}
+
+.span4 img {
+  margin-right: 50px;
+  float: left;
+  scale: 20%;
+}
+
+.container .content-heading  h3 {
+  font-size: 53px;
+  font-family: font-file-82132;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 40px;
+}
+
