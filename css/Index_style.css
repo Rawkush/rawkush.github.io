@@ -110,23 +110,46 @@ body {font-family: Verdana, sans-serif; margin:0}
   background: url(../res/loader.gif) center center no-repeat;
 }
 
-
-.span4{
-  margin-top: 90px;
+.section {
+  padding: 100px 0;
 }
 
-.span4 img {
-  margin-right: 50px;
-  float: left;
-  scale: 20%;
-}
 
 .container .content-heading  h3 {
   font-size: 53px;
   font-family: font-file-82132;
-  font-weight: 400;
+  font-weight: bold;
   margin-top: 0;
   position: relative;
   margin-bottom: 40px;
 }
 
+.aboutImage {
+  max-width: 100%;
+}
+
+
+p{
+  font-family: "Open Sans",sans-serif;
+}
+
+span.blast {
+  display: inline-block;
+}
+ 
+span.blast.animated.bounce {
+  animation-name: rubberBand;
+  animation-duration: 0.9s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-name: rubberBand;
+}
+
+
+@keyframes rubberBand {
+  0% {transform: scale(1);}
+  30% {transform: scaleX(1.25) scaleY(0.75);}
+  40% {transform: scaleX(0.75) scaleY(1.25);}
+  60% {transform: scaleX(1.15) scaleY(0.85);}
+  100% {transform: scale(1);}
+} 
