@@ -16,50 +16,6 @@ $(function(){
     startDelay: 1000,
     showCursor: false
   });
- 
-  //using blast for headings
-  $('h3').blast({
-    delimiter: 'character'
-  });
-
-  $('h3').on('mouseenter', '.blast', function(){
-
-    // Store the targeted `.blast` element as an instanced variable
-    var $target = $(this);
-
-    // Add the animation classes to it
-    $target.addClass('animated bounce');
-    
-    // Run the `removeClass` function on our instanced variable after
-    // 1 sec (animation length of `.bounce`)
-    setTimeout(function(){
-      $target.removeClass('animated bounce');
-    }, 1000);
-  });
-
-
-  //setting up blast for paragraphs
-  $('p').blast({
-    delimiter: 'word'
-  });
-
-  $('p').on('mouseenter', '.blast', function(){
-
-    // Store the targeted `.blast` element as an instanced variable
-    var $target = $(this);
-
-    // Add the animation classes to it
-    $target.addClass('animated bounce');
-    
-    // Run the `removeClass` function on our instanced variable after
-    // 1 sec (animation length of `.bounce`)
-    setTimeout(function(){
-      $target.removeClass('animated bounce');
-    }, 1000);
-  });
-
-
-
 
 });
 
@@ -72,6 +28,30 @@ $(window).on("load", function () {
       $(".loader").fadeOut(750);
   });
 
+  doBlast('h3','character');
+  doBlast('p','word');
+  doBlast('.main','character');
+
 
 });
 
+
+function doBlast(element,division){
+  //using blast for headings
+  $(element).blast({
+    delimiter: division
+  });
+  $(element).on('mouseenter', '.blast', animationChanges);
+}
+
+function animationChanges(){
+  // Store the targeted `.blast` element as an instanced variable
+  var $target = $(this);
+  // Add the animation classes to it
+  $target.addClass('animated bounce');
+  // Run the `removeClass` function on our instanced variable after
+  // 1 sec (animation length of `.bounce`)
+  setTimeout(function(){
+    $target.removeClass('animated bounce');
+  }, 1000);
+}
