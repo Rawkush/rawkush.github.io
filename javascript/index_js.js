@@ -1,5 +1,5 @@
 
-//jqueryh after page loaded
+//jquery after page loaded
 $(function(){
   // jQuery methods go here...
   $('#slides').superslides({
@@ -10,12 +10,17 @@ $(function(){
 
 
   var typed = new Typed(".typed", {
-    strings: ["Android Developer.", "Web Developer.", "Student."],
+    strings: ["Android Developer.", "Web Developer.", "Programmer."],
     typeSpeed: 70,
-   loop: true,
+    loop: true,
     startDelay: 1000,
     showCursor: false
   });
+
+
+  createChart();
+
+
 
 });
 
@@ -36,22 +41,16 @@ $(window).on("load", function () {
 });
 
 
-function doBlast(element,division){
-  //using blast for headings
-  $(element).blast({
-    delimiter: division
+function createChart(){
+  $('.chart').easyPieChart({
+    easing: 'easeInOut',
+    barColor: '#08fdd8',
+    trackColor: false,
+    scaleColor: false,
+    lineWidth: 10,
+    size: 152,
+    onStep: function (from, to, percent) {
+        $(this.el).find('.percent').text(Math.round(percent));
+    }
   });
-  $(element).on('mouseenter', '.blast', animationChanges);
-}
-
-function animationChanges(){
-  // Store the targeted `.blast` element as an instanced variable
-  var $target = $(this);
-  // Add the animation classes to it
-  $target.addClass('animated bounce');
-  // Run the `removeClass` function on our instanced variable after
-  // 1 sec (animation length of `.bounce`)
-  setTimeout(function(){
-    $target.removeClass('animated bounce');
-  }, 1000);
 }
