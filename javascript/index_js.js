@@ -1,6 +1,7 @@
 
+console.log("asdhjhasdj")
 //jquery after page loaded
-$(function(){
+$(function () {
   // jQuery methods go here...
   $('#slides').superslides({
     hashchange: true,
@@ -26,22 +27,21 @@ $(function(){
 
 
 //runs after all resources are loaded
-$(window).on("load", function () {
-
+$(document).ready(function () {
   // hiding the loader
   $(".loader .inner").fadeOut(500, function () {
-      $(".loader").fadeOut(750);
+    $(".loader").fadeOut(750);
   });
 
-  doBlast('h3','character');
-  doBlast('p','word');
-  doBlast('.main','character');
+  doBlast('h3', 'character');
+  doBlast('p', 'word');
+  doBlast('.main', 'character');
 
 
 });
 
 
-function createChart(){
+function createChart() {
   $('.chart').easyPieChart({
     easing: 'easeInOut',
     barColor: '#08fdd8',
@@ -50,7 +50,10 @@ function createChart(){
     lineWidth: 10,
     size: 152,
     onStep: function (from, to, percent) {
-        $(this.el).find('.percent').text(Math.round(percent));
+      $(this.el).find('.percent').text(Math.round(percent));
     }
+
   });
+
+  
 }
