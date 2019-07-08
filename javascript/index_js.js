@@ -18,8 +18,7 @@ $(function () {
     showCursor: false
   });
 
-  
-
+  reSize();
   createChart('.chart', 152);
   createChart('.smallchart', 90, 5);
 
@@ -60,9 +59,7 @@ function responsiveChartDisplay() {
 
   $(window).resize(function () {
     console.log($(window).width());
-
     reSize();
-
   });
 
 
@@ -70,27 +67,26 @@ function responsiveChartDisplay() {
 
 function reSize() {
 
- /*  if ($(window).width() < 913) {
+  if ($(window).width() < 913) {
+    // smallest
+    $("#pie-container").remove();
+    $("#container").append(display1BigCharts());
 
-    $("#java-chart").removeClass('col-md-4').addClass('col-md-12');
-    $("#js-chart").remove();
-    $("#python-chart").remove();
   } else
     if ($(window).width() < 983) {
       // show only two charts
-      $("#js-chart").removeClass('col-md-4').addClass('col-md-6');
-      $("#java-chart").removeClass('col-md-4').addClass('col-md-6');
-      $("#python-chart").remove();
+      $("#pie-container").remove();
+      $("#container").append(display2BigCharts());
 
     } else {
-      if (!($("#python-chart").length && $("#js-chart").length)) {
-        $("#pie-container").remove();
-        $("#container").append(data);
+      //biggest
+      $("#pie-container").remove();
+      $("#container").append(display3BigCharts());
 
-      }
-    } */
-
-
+    }
+    createChart('.chart', 152);
+    createChart('.smallchart', 90, 5);
+  
 }
 
 
@@ -327,8 +323,8 @@ function display2BigCharts() {
   return chart;
 }
 
-function display1BigCharts(){
-  let chart=`     
+function display1BigCharts() {
+  let chart = `     
           <div id="pie-container" class="row no-gutters">
 
   <div id="java-chart" class="col-md-12">
