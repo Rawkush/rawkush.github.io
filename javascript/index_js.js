@@ -19,8 +19,6 @@ $(function () {
   });
 
   reSize();
-  createChart('.chart', 152);
-  createChart('.smallchart', 90, 5);
 
 
 });
@@ -56,37 +54,51 @@ function createChart(element, Size, lineWidth = 10) {
 }
 
 function responsiveChartDisplay() {
-
   $(window).resize(function () {
     console.log($(window).width());
     reSize();
   });
-
-
 }
 
 function reSize() {
 
-  if ($(window).width() < 913) {
+  if ($(window).width() < 856) {
     // smallest
-    $("#pie-container").remove();
-    $("#container").append(display1BigCharts());
+    if (!$("#python-chart").length) {
+      $("#container").append(display1BigCharts());
+    } else
 
+      if ($("#python-chart").length || $("#js-chart").length) {
+        $("#pie-container").remove();
+        $("#container").append(display1BigCharts());
+      }
   } else
-    if ($(window).width() < 983) {
+    if ($(window).width() < 966) {
       // show only two charts
-      $("#pie-container").remove();
-      $("#container").append(display2BigCharts());
+      if (!$("#python-chart").length) {
+        $("#container").append(display2BigCharts());
+      } else
+
+        if ($("#python-chart").length) {
+          $("#pie-container").remove();
+          $("#container").append(display2BigCharts());
+        }
 
     } else {
       //biggest
-      $("#pie-container").remove();
-      $("#container").append(display3BigCharts());
+      if (!$("#python-chart").length) {
+        $("#container").append(display3BigCharts());
+      } else
 
+        if ((!$("#python-chart").length) || (!$("#js-chart").length)) {
+          $("#pie-container").remove();
+          $("#container").append(display3BigCharts());
+        }
     }
-    createChart('.chart', 152);
-    createChart('.smallchart', 90, 5);
-  
+
+  createChart('.chart', 152);
+  createChart('.smallchart', 90, 5);
+
 }
 
 
@@ -191,10 +203,7 @@ function display3BigCharts() {
 
                         </div>
 
-                        <div id="scre" class="col-md-12">
-
-
-                        </div>
+                      
 
                     </div>`
 
@@ -289,7 +298,7 @@ function display2BigCharts() {
               </div>
 
               <div class="col-md-4">
-                  <div id="python-chart">
+                  <div id="python-chart-small">
                       <div class="box">
                           <div class="smallchart" data-percent="73">
                               <span class="percent">73%</span>
@@ -304,15 +313,6 @@ function display2BigCharts() {
 
           </div>
 
-
-      </div>
-
-      <div id="smallest-chart" class="col-md-12">
-          <div class="row">
-
-
-
-          </div>
 
       </div>
 
@@ -396,7 +396,7 @@ function display1BigCharts() {
           </div>
 
           <div class="col-md-4">
-              <div id="python-chart">
+              <div id="python-chart-small">
                   <div class="box">
                       <div class="smallchart" data-percent="73">
                           <span class="percent">73%</span>
@@ -409,7 +409,7 @@ function display1BigCharts() {
               </div>
           </div>
 
-          <div id="js-chart" class="col-md-4">
+          <div id="js-chart-small" class="col-md-4">
               <div class="box">
                   <div class="smallchart" data-percent="73">
                       <span class="percent">73%</span>
