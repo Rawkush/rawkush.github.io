@@ -1,4 +1,6 @@
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -11,18 +13,21 @@
 .mySlides {
   display: none;
   height: 50%;
-
 }
 
 ​img {
   vertical-align: middle;
   width: 100%;
 }
-body {font-family: Verdana, sans-serif; margin:0}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
 
 /* Next & previous buttons */
 
-.slides-navigation .prev, .slides-navigation .next {
+.slides-navigation .prev,
+.slides-navigation .next {
   width: 47px;
   height: 47px;
   background-size: cover;
@@ -36,10 +41,10 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 .slides-navigation {
   z-index: 6;
@@ -55,7 +60,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   background-image: url(../res/icons/next.png);
 }
 
-
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -66,7 +70,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   width: 100%;
   text-align: center;
 }
-
 
 .titleMessage {
   position: absolute;
@@ -93,7 +96,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   font-size: 23px;
 }
 
-
 .loader {
   width: 100%;
   height: 100%;
@@ -108,17 +110,13 @@ body {font-family: Verdana, sans-serif; margin:0}
   width: 100%;
   height: 100%;
   background: url(../res/loader.gif) center center no-repeat;
-
 }
-
-
 
 .section {
   padding: 100px 0;
 }
 
-
-.container .content-heading  h3 {
+.container .content-heading h3 {
   font-size: 53px;
   font-family: font-file-82132;
   font-weight: bold;
@@ -131,15 +129,14 @@ body {font-family: Verdana, sans-serif; margin:0}
   max-width: 100%;
 }
 
-
-p{
-  font-family: "Open Sans",sans-serif;
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
 span.blast {
   display: inline-block;
 }
- 
+
 span.blast.animated.bounce {
   animation-name: rubberBand;
   animation-duration: 0.9s;
@@ -148,36 +145,33 @@ span.blast.animated.bounce {
   animation-name: rubberBand;
 }
 
-
-
-.skill-section{
+.skill-section {
   background-color: #444;
   position: absolute;
 }
 
-.skill-container{
-  margin-left:  30px;
+.skill-container {
+  margin-left: 30px;
   margin: 60px;
 }
 
-.skill-section h2{
+.skill-section h2 {
   color: #08fdd8;
   font-weight: bold;
   display: block;
   font-size: 4em;
 }
 
-.skill-section p{
+.skill-section p {
   margin-top: 20px;
   color: white;
 }
 
-
-.skill-data{
+.skill-data {
   margin-right: 10px;
 }
 
-.box{
+.box {
   text-align: center;
 }
 
@@ -197,17 +191,17 @@ span.blast.animated.bounce {
 }
 
 .chart .percent {
-  color:white;
+  color: white;
   line-height: 152px;
   display: inline-block;
   font-size: 35px;
 }
 
 .chart .percent:after {
-  content: '%';
+  content: "%";
 }
 
-#small-container{
+#small-container {
   margin-top: 40px;
 }
 
@@ -227,21 +221,20 @@ span.blast.animated.bounce {
 }
 
 .smallchart .percent {
-  color:white;
+  color: white;
   line-height: 85px;
   display: inline-block;
   font-size: 25px;
 }
 
 .smallchart .percent:after {
-  content: '%';
+  content: "%";
 }
-
 
 /**************************NavBar****************************/
 
 #navbar {
-    padding: 12px 10px;
+  padding: 12px 10px;
   z-index: 100;
   width: 100%;
 }
@@ -261,10 +254,19 @@ span.blast.animated.bounce {
 /**********************************/
 
 @keyframes rubberBand {
-  0% {transform: scale(1);}
-  30% {transform: scaleX(1.25) scaleY(0.75);}
-  40% {transform: scaleX(0.75) scaleY(1.25);}
-  60% {transform: scaleX(1.15) scaleY(0.85);}
-  100% {transform: scale(1);}
-} 
-
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
