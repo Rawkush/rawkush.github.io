@@ -1,9 +1,3 @@
-
-
-
-
-
-
 //jquery after page loaded
 $(function () {
   // jQuery methods go here...
@@ -41,6 +35,17 @@ $(document).ready(function () {
   responsiveChartDisplay()
 
   // for navbar
+
+  $("#navbar li a").click(function (e) {
+    e.preventDefault();
+
+    var targetElement = $(this).attr("href");
+    var targetPosition = $(targetElement).offset().top;
+    $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
+
+});
+
+
   const nav = $("#navbar");
   const navTop = nav.offset().top;
 
