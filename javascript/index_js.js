@@ -1,5 +1,9 @@
 
-console.log("asdhjhasdj")
+
+
+
+
+
 //jquery after page loaded
 $(function () {
   // jQuery methods go here...
@@ -36,6 +40,28 @@ $(document).ready(function () {
   doBlast('.main', 'character');
   responsiveChartDisplay()
 
+  // for navbar
+  const nav = $("#navbar");
+  const navTop = nav.offset().top;
+
+  $(window).on("scroll", stickyNavigation);
+
+  function stickyNavigation() {
+
+    var body = $("body");
+
+    if ($(window).scrollTop() >= navTop) {
+      body.css("padding-top", nav.outerHeight() + "px");
+      body.addClass("fixedNav");
+    }
+    else {
+      body.css("padding-top", 0);
+      body.removeClass("fixedNav");
+    }
+
+  }
+
+
 });
 
 
@@ -64,7 +90,7 @@ function reSize() {
 
   if ($(window).width() < 856) {
     // smallest
-    if (!$("#python-chart").length) {
+    if (!$("#java-chart").length) {
       $("#container").append(display1BigCharts());
     } else
 
@@ -75,7 +101,7 @@ function reSize() {
   } else
     if ($(window).width() < 966) {
       // show only two charts
-      if (!$("#python-chart").length) {
+      if (!$("#java-chart").length) {
         $("#container").append(display2BigCharts());
       } else
 
@@ -86,7 +112,7 @@ function reSize() {
 
     } else {
       //biggest
-      if (!$("#python-chart").length) {
+      if (!$("#java-chart").length) {
         $("#container").append(display3BigCharts());
       } else
 
