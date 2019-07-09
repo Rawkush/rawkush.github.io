@@ -30,8 +30,7 @@ $(document).ready(function() {
   doBlast(".main", "character");
   responsiveChartDisplay();
 
-  // for navbar
-
+  // for navbar********************
   $("#navbar li a").click(function(e) {
     e.preventDefault();
 

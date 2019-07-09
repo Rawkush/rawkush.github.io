@@ -234,9 +234,15 @@ span.blast.animated.bounce {
 /**************************NavBar****************************/
 
 #navbar {
+  background-color: #3ca8e7;
   padding: 12px 10px;
   z-index: 100;
   width: 100%;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
 }
 
 #navbar li a {
@@ -245,6 +251,14 @@ span.blast.animated.bounce {
 
 #navbar li {
   padding: 0 10px;
+}
+#navbar li :hover {
+  color: rgb(0, 0, 0);
+}
+
+.navbar-toggler-icon {
+  background: url(../res/icons/menu.png);
+  background-size: 100%;
 }
 
 .fixedNav #navbar {
