@@ -8,6 +8,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/superslides.css" />
     <link rel="stylesheet" href="css/Index_style.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
@@ -50,7 +51,7 @@
       </nav>
     </div>
 
-    <nav id="navbar" class="navbar  navbar-expand-lg">
+    <nav id="navigation" class="navbar  navbar-expand-lg">
       <!-- Brand -->
       <a class="navbar-brand" href="#">Ankush Rawat</a>
 
@@ -80,15 +81,15 @@
             <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Stats</a>
+            <a class="nav-link" href="#stats">Stats</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -116,9 +117,9 @@
               myself, and for clients.
             </p>
             <p>
-              I am a coding enthusiast with strong knowledge of Data Structures
+              I am a coding enthusiast with knowledge of Data Structures
               and Algorithms, Skilled in Java, C/C++, Python also having
-              extensive experience in Machine Learning. However some of my
+              some experience in Machine Learning. Some of my
               favourite projects involve working in java for Android App
               Development, C++ for Arduino, and python for Machine Learning.
             </p>
@@ -146,52 +147,451 @@
         </div>
     </div> -->
 
-    <div id="skills" class="skill-section">
-      <div class="skill-container">
-        <div class="row">
-          <div class="col-md-5">
-            <div class="skill-data">
-              <span>
-                <h2>
-                  Skills & <br />
-                  Experience
-                </h2>
-              </span>
-              <p>
-                The Scope of my work is a large part of the front end
-                Development, which includes coding, layouts desinging for both
-                Andoid and Web Development.
-              </p>
 
-              <p>
-                Programming languages I have worked on so far: C, C++, java,
-                python, javascript, C#
-              </p>
+    <div id="skills" class="skillsSection section">
 
-              <p>
-                I have also worked on MySql, SqlLite database. Worked on
-                Microsoft Visio, Umbrello, MATLAB, Unity.
-              </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>TECHNICAL SKILLS</h2>
+                    <p>A representation of my proficiency in each skill</p>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="skill">
+                        <span class="chart" data-percent="85">
+                            <span class="percent">80</span>
+                            <canvas height="152" width="152"></canvas>
 
-              <p>
-                Aside from development, I have worked on Batch programming
-                learned photoshop, created PC game using Game Maker, also I have
-                used Unity software for creating android games.
-              </p>
+                        </span>
+                        <h4>JAVA</h4>
+                        <p>Used in Android App Development</p>
+                    </div>
+                    <div class="skill">
+                        <span class="chart" data-percent="85">
+                            <span class="percent">85</span>
+                            <canvas height="152" width="152"></canvas>
+
+                        </span>
+                        <h4>C++</h4>
+                        <p>Used in Computer Software</p>
+                    </div>
+                    <div class="skill">
+                        <span class="chart" data-percent="70">
+                            <span class="percent">70</span>
+                            <canvas height="152" width="152"></canvas>
+
+                        </span>
+                        <h4>C</h4>
+                        <p>Used in Software</p>
+                    </div>
+                    <div class="skill">
+                        <span class="chart" data-percent="70">
+                            <span class="percent">55</span>
+                            <canvas height="152" width="152"></canvas>
+
+                        </span>
+                        <h4>Python</h4>
+                        <p>Used in Machine Learning</p>
+                    </div>
+                    <div class="skill">
+                        <span class="chart" data-percent="75">
+                            <span class="percent">30</span>
+                            <canvas height="152" width="152"></canvas>
+
+                        </span>
+                        <h4>Javascript</h4>
+                        <p>Used in Web Development</p>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="65">
+                            <span class="percent">35</span>
+                            <canvas height="152" width="152"></canvas>
+
+                        </span>
+                        <h4>C#</h4>
+                        <p>Used in Flutter Application</p>
+                    </div>
+
+                </div>
+
             </div>
-          </div>
-
-          <div class="col-md-7" id="container">
-            <!-- pie charts will be added dynamically -->
-          </div>
         </div>
-      </div>
     </div>
+
+    <div id="stats" class="statsSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fa fa-clock"></i>
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="counter">1</h2>
+                                <h3>Years Experience</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="counter">1</h2>
+                                <h3>Clients</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="counter">13</h2>
+                                <h3>Android Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fa fa-cloud"></i>
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="counter">2</h2>
+                                <h3>ML Projects</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div id="projects" class="section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="heading">
+                    <h2>PORTFOLIO</h2>
+                </div>
+
+                <div class="filter">
+
+                    <ul id="filters">
+
+                        <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                        <li><a href="#" data-filter=".apps">Apps</a></li>
+                        <li><a href="#" data-filter=".me">Me</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="itemsContainer">
+
+                    <ul class="items">
+
+
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="res/projects/thumbnails/career.png">
+
+
+                                <div class="icons">
+                                    <a href="res/projects/career.png" title="View image" class="openButton" data-fancybox
+                                        data-caption="This app shows all possible career paths">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="https://github.com/Rawkush/Career_Counselling_app" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="res/projects/thumbnails/memory.png">
+
+
+                                <div class="icons">
+                                    <a href="res/projects/memory.png" title="View image" class="openButton" data-fancybox
+                                        data-caption="This is a game for excersing brain and memory skill">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="https://github.com/Rawkush/memory" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+
+                        <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="res/projects/thumbnails/my_pic.jpg">
+
+
+                                <div class="icons">
+                                    <a href="res/projects/my_pic.jpg" title="View image" class="openButton" data-fancybox
+                                        data-caption="This is a place holder for ml project">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="res/projects/thumbnails/Rawanime.png">
+
+
+                                <div class="icons">
+                                    <a href="res/projects/Rawanime.png" title="View image" class="openButton" data-fancybox
+                                        data-caption="Android App to watch anime for free">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="res/projects/thumbnails/farm.png">
+
+
+                                <div class="icons">
+                                    <a href="res/projects/farm.png" title="View image" class="openButton"
+                                        data-fancybox data-caption="Patient App which request appointments to Doctors">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="res/projects/thumbnails/Status.png">
+
+
+                                <div class="icons">
+                                    <a href="res/projects/Status.png" title="View image" class="openButton"
+                                        data-fancybox data-caption="A simple Android Application to download Your contacts Status from whatsapp in a single click. This app does not require any internet connection.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="http://bit.ly/-Status-Saver" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+
+                        <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="res/projects/thumbnails/my_pic.jpg">
+
+
+                                <div class="icons">
+                                    <a href="res/projects/my_pic.jpg" title="View image" class="openButton" data-fancybox
+                                        data-caption="place holder">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="res/projects/thumbnails/farm.png">
+
+
+                                <div class="icons">
+                                    <a href="res/projects/farm.png" title="View image" class="openButton"
+                                        data-fancybox data-caption="place holder">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="res/projects/thumbnails/onepiece.png">
+
+
+                                <div class="icons">
+                                    <a href="res/projects/OnePiece.png" title="View image" class="openButton"
+                                        data-fancybox data-caption="One Piece Wallpaper App">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contactSection section">
+
+        <div class="col-md-12 text-center">
+
+            <h2>I'd love to hear from you!</h2>
+            <a href="mailTo:ankushrawat950@gmail.com" class="contactButton">GET IN TOUCH!</a>
+
+            <ul>
+				<li><a target="_blank" class="facebook" href="https://www.facebook.com/"></a></li>
+				<li><a target="_blank" class="instagram" href="https://www.instagram.com/patrick_0925/"></a></li>
+				<li><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/ankush-rawat-15427945/"></a></li>
+                <li><a target="_blank" class="github" href="https://github.com/rawkush"></a></li>
+
+			</ul>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="javascript/countUp.js"></script>
+    <script src="javascript/countUp-jquery.js"></script>
+    <script src="javascript/owl.carousel.min.js"></script>
 
     <script src="javascript/jquery.superslides.min.js"></script>
     <script src="javascript/index_js.js"></script>
     <script src="javascript/typed.min.js"></script>
     <script src="javascript/jquery.blast.min.js"></script>
     <script src="javascript/jquery.easypiechart.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"></script>
+
   </body>
 </html>
