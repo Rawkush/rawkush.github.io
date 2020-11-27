@@ -2,7 +2,7 @@
 $(function() {
   // jQuery methods go here...
     $("#slides").superslides({
-        hashchange: true,
+        hashchange: false,
         play: 2000,
         animation: "fade",
         pagination: false
