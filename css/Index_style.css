@@ -155,20 +155,17 @@ span.blast.animated.bounce {
   margin: 60px;
 }
 
-.skill-section h2 {
+
+
+.skill-head h2 {
   color: #08fdd8;
   font-weight: bold;
   display: block;
-  font-size: 4em;
 }
 
 .skill-section p {
   margin-top: 20px;
   color: white;
-}
-
-.skill-data {
-  margin-right: 10px;
 }
 
 .box {
@@ -180,9 +177,56 @@ span.blast.animated.bounce {
   color: #fff;
 }
 
+
+
 .skill {
   text-align: center;
   margin-left: 10px;
+}
+
+.contactButton {
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.contactButton:hover {
+  text-decoration: none;
+  color: #e74c3c;
+  background-color: #fff;
+}
+
+.contactSection ul {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+.contactSection li {
+  display: inline-block;
+  margin: 0 4px;
+  text-align: center;
+
+}
+
+.contactSection li a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 18px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in, 1s;
+  -moz-transition: all 0.3s ease-in, 1s;
+  -o-transition: all 0.3s ease-in, 1s;
+  -ms-transition: all 0.3s ease-in, 1s;
+  transition: all 0.3s ease-in, 1s;
 }
 
 .chart {
@@ -200,7 +244,7 @@ span.blast.animated.bounce {
 }
 
 .chart .percent {
-  color: #000;
+  color:  #fff;
   line-height: 152px;
   display: inline-block;
   font-size: 35px;
@@ -209,8 +253,6 @@ span.blast.animated.bounce {
 .chart .percent:after {
   content: '%';
 }
-
-
 
 .squareItem {
   margin-top: 30px;
@@ -267,13 +309,13 @@ span.blast.animated.bounce {
 
 
 
-.facebook { background: url(../img/facebook.png) center no-repeat  }
+.facebook { background: url(../res/facebook.png) center no-repeat  }
 .facebook:hover { background-color: #4265b9; }
-.instagram { background: url(../img/instagram.png) center no-repeat ; }
+.instagram { background: url(../res/instagram.png) center no-repeat ; }
 .instagram:hover { background-color: #956751; }
-.linkedin { background: url(../img/linkedin.png) center no-repeat ; }
+.linkedin { background: url(../res/linkedin.png) center no-repeat ; }
 .linkedin:hover { background-color: #0073b2; }
-.github { background: url(../img/github.png) center no-repeat ; }
+.github { background: url(../res/github.png) center no-repeat ; }
 .github:hover { background-color: #0073b2; }
 
 
@@ -292,7 +334,6 @@ span.blast.animated.bounce {
 
 .filter .current {
   background-color: #e74c3c;
-  ;
   border-color: #e74c3c;
   color: #fff;
 }

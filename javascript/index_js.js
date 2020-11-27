@@ -39,8 +39,10 @@ $(document).ready(function() {
     $(".loader").fadeOut(750);
   });
 
-  //doBlast("h3", "character");
-  //doBlast("p", "word");
+  doBlast("h3", "character");
+  doBlast("p", "word");
+  doBlast("h2", "word");
+
   //doBlast(".main", "character");
 
   $('.owl-carousel').owlCarousel({
@@ -71,7 +73,7 @@ $(window).scroll(function () {
 
         $('.chart').easyPieChart({
             easing: 'easeInOut',
-            barColor: '#fff',
+            barColor: '#08fdd8',
             trackColor: false,
             scaleColor: false,
             lineWidth: 4,
