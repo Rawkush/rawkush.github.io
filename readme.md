@@ -8,6 +8,9 @@
    ![GitHub top language](https://img.shields.io/github/languages/top/rawkush/rawkush.github.io)
    <br />
   ![GitHub](https://img.shields.io/github/license/rawkush/rawkush.github.io?style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/rawkush/rawkush.github.io?style=social)  
+![GitHub Repo stars](https://img.shields.io/github/stars/rawkush/rawkush.github.io?style=social)  <br />
+[![HitCount](http://hits.dwyl.com/rawkush/rawkushgithubio.svg)](http://hits.dwyl.com/rawkush/rawkushgithubio)
+
+
 
 ### [Visit the portfolio](https://rawkush.github.io/)
