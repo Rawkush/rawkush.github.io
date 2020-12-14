@@ -9,8 +9,7 @@
    <br />
   ![GitHub](https://img.shields.io/github/license/rawkush/rawkush.github.io?style=plastic)
 ![GitHub Repo stars](https://img.shields.io/github/stars/rawkush/rawkush.github.io?style=social)  <br />
-[![HitCount](http://hits.dwyl.com/rawkush/rawkushgithubio.svg)](http://hits.dwyl.com/rawkush/rawkushgithubio)
-
+![ViewCount](https://views.whatilearened.today/views/github/rawkush/rawkushgithubio.svg)
 
 
 ### [Visit the portfolio](https://rawkush.github.io/)
